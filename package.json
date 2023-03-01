@@ -1,0 +1,40 @@
+{
+  "name": "pizza-ordering",
+  "version": "1.0.0",
+  "description": "This is our pizza app",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "mix",
+    "watch": "npx mix watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "Jaydeep, Bhushan, Rohit",
+  "license": "ISC",
+  "dependencies": {
+    "@stripe/stripe-js": "^1.29.0",
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.3",
+    "mongoose": "^6.2.10",
+    "noty": "^3.2.0-beta-deprecated",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.0",
+    "stripe": "^8.219.0"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.10",
+    "sass-loader": "^12.1.0"
+  }
+}
